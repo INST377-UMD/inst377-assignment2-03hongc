@@ -2,5 +2,5 @@
 # INST377-Lab
 
 # Name (Please Input your name):
-
+Collin Hong
 # Comments: 
