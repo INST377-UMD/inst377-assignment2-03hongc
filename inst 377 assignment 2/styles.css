@@ -1,0 +1,263 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li:hover {
+    background-color: #555;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
+                rgba(44, 187, 99, .15) 0 1px 2px,
+                rgba(44, 187, 99, .15) 0 2px 4px,
+                rgba(44, 187, 99, .15) 0 4px 8px,
+                rgba(44, 187, 99, .15) 0 8px 16px,
+                rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 10px;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset,
+                rgba(44, 187, 99, .25) 0 1px 2px,
+                rgba(44, 187, 99, .25) 0 2px 4px,
+                rgba(44, 187, 99, .25) 0 4px 8px,
+                rgba(44, 187, 99, .25) 0 8px 16px,
+                rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* Quote Box */
+#quote-box {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+#quote-box p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+/* Audio Instructions Section */
+.audio-box {
+    background-color: #f0f0f0;
+    border-top: 2px solid #ccc;
+    padding: 15px;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.audio-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.audio-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.audio-box ul li {
+    margin-bottom: 5px;
+}
+
+.audio-box button {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
+                rgba(44, 187, 99, .15) 0 1px 2px,
+                rgba(44, 187, 99, .15) 0 2px 4px,
+                rgba(44, 187, 99, .15) 0 4px 8px,
+                rgba(44, 187, 99, .15) 0 8px 16px,
+                rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 5px;
+}
+
+.audio-box button:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset,
+                rgba(44, 187, 99, .25) 0 1px 2px,
+                rgba(44, 187, 99, .25) 0 2px 4px,
+                rgba(44, 187, 99, .25) 0 4px 8px,
+                rgba(44, 187, 99, .25) 0 8px 16px,
+                rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+  
+/* Stocks.js styling */
+  .reddit-stocks-container {
+    border: 2px solid #333; /* Adds a solid border around the table */
+    padding: 20px;           /* Adds space around the content */
+    margin-top: 20px;        /* Adds space above the container */
+    border-radius: 8px;      /* Optional: Adds rounded corners */
+  }
+  
+  #reddit-stocks {
+    width: 100%;
+    border-collapse: collapse; /* Makes sure table borders are collapsed */
+  }
+  
+  #reddit-stocks th, #reddit-stocks td {
+    padding: 8px 12px; /* Adds padding inside the table cells */
+    text-align: left;   /* Aligns the text to the left */
+  }
+  
+  #reddit-stocks th {
+    background-color: #f4f4f4; /* Light background for headers */
+    border-bottom: 2px solid #ddd; /* Adds a bottom border to the header */
+  }
+  
+  #reddit-stocks td {
+    border-bottom: 1px solid #ddd; /* Adds a bottom border to the table rows */
+  }
+  
+  /* dog.js styling */
+  .breed-card {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+/* Styling for the Breed Info Box */
+#breed-info {
+  background-color: #f4f4f4; /* Light background for the info box */
+  border: 2px solid #ddd; /* Border around the box */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 400px; /* Limiting width */
+  font-size: 14px; /* Smaller font for readability */
+  line-height: 1.5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#breed-info h3 {
+  font-size: 18px; /* Heading size */
+  margin-bottom: 10px;
+  color: #333; /* Darker color for heading */
+}
+
+#breed-info p {
+  margin-bottom: 10px;
+  color: #555; /* Slightly lighter color for paragraphs */
+}
+
+#breed-info strong {
+  color: #222; /* Bold labels in dark color */
+}
+#carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+#carousel-image {
+  width: 400px;
+  height: 300px;
+  object-fit: contain; 
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+#prev-btn, #next-btn {
+  background-color: #eee;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+  background-color: #ddd;
+}
+
+#dots {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Ensure the dots are centered */
+  gap: 5px; /* Space out the dots a bit */
+}
