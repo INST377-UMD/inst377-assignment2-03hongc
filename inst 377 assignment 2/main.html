@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="libraries/annyang.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <main>
+      <h1>Welcome to the Dashboard</h1>
+      
+      <button class="button-33" onclick="location.href='stocks.html'">Stocks</button>
+      <button class="button-33" onclick="location.href='dogs.html'">Dogs</button>
+
+      <div id="quote-box">
+        <p id="quote">Loading quote...</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Audio Instructions Section -->
+  <div id="audio-instructions" class="audio-box">
+    <h2>Voice Commands</h2>
+    <ul>
+      <li>Say "Hello" → shows alert</li>
+      <li>Say "Change the color to [color]" → changes background</li>
+      <li>Say "Navigate to [page name]" → navigates to page</li>
+    </ul>
+    <button class="button-33" onclick="annyang.start()">Turn On Audio</button>
+    <button class="button-33" onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
